@@ -1,0 +1,120 @@
+[
+  {
+    "model": "rentajetapi.flight",
+    "pk": 1,
+    "fields": {
+      "name": "",
+      "departure_airport_id": 0,
+      "destination_airport_id": 0,
+      "price": 0
+    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 2,
+    "fields": {
+      "name": "",
+      "departure_airport_id": 0,
+      "destination_airport_id": 0,
+      "price": 0    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 3,
+    "fields": {
+      "name": "",
+      "departure_airport_id": 0,
+      "destination_airport_id": 0,
+      "price": 0    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 4,
+    "fields": {
+      "name": "",
+      "departure_airport_id": 0,
+      "destination_airport_id": 0,
+      "price": 0    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 5,
+    "fields": {
+      "name": "",
+      "departure_airport_id": 0,
+      "destination_airport_id": 0,
+      "price": 0    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 6,
+    "fields": {
+      "name": "",
+      "departure_airport_id": 0,
+      "destination_airport_id": 0,
+      "price": 0    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 7,
+    "fields": {
+      "name": "",
+      "departure_airport_id": 0,
+      "destination_airport_id": 0,
+      "price": 0    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 8,
+    "fields": {
+      "name": "",
+      "departure_airport_id": 0,
+      "destination_airport_id": 0,
+      "price": 0    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 9,
+    "fields": {
+      "name": "",
+      "departure_airport_id": 0,
+      "destination_airport_id": 0,
+      "price": 0    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 10,
+    "fields": {
+      "name": "",
+      "departure_airport_id": 0,
+      "destination_airport_id": 0,
+      "price": 0    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 11,
+    "fields": {
+      "name": "",
+      "departure_airport_id": 0,
+      "destination_airport_id": 0,
+      "price": 0    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 12,
+    "fields": {
+      "name": "",
+      "departure_airport_id": 0,
+      "destination_airport_id": 0,
+      "price": 0    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 13,
+    "fields": {
+      "name": "",
+      "departure_airport_id": 0,
+      "destination_airport_id": 0,
+      "price": 0    }
+  }
+]
