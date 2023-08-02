@@ -1,0 +1,194 @@
+[
+  {
+      "model": "rentajetapi.airport",
+      "pk": 1,
+      "fields": {
+          "code": "BNA",
+          "city": "Nashville"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 2,
+      "fields": {
+          "code": "ATL",
+          "city": "Atlanta"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 3,
+      "fields": {
+          "code": "DFW",
+          "city": "Dallas-Fort Worth"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 4,
+      "fields": {
+          "code": "DEN",
+          "city": "Denver"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 5,
+      "fields": {
+          "code": "ORD",
+          "city": "Chicago"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 6,
+      "fields": {
+          "code": "LAX",
+          "city": "Los Angeles"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 7,
+      "fields": {
+          "code": "JFK",
+          "city": "New York City"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 8,
+      "fields": {
+          "code": "LAS",
+          "city": "Las Vegas"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 9,
+      "fields": {
+          "code": "MCO",
+          "city": "Orlando"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 10,
+      "fields": {
+          "code": "MIA",
+          "city": "Miami"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 11,
+      "fields": {
+          "code": "PHX",
+          "city": "Phoenix"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 12,
+      "fields": {
+          "code": "CLT",
+          "city": "Charlotte"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 13,
+      "fields": {
+          "code": "SEA",
+          "city": "Seattle"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 14,
+      "fields": {
+          "code": "SFO",
+          "city": "San Francisco"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 15,
+      "fields": {
+          "code": "IAH",
+          "city": "Houston"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 16,
+      "fields": {
+          "code": "BOS",
+          "city": "Boston"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 17,
+      "fields": {
+          "code": "MSP",
+          "city": "Minneapolis-Saint Paul"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 18,
+      "fields": {
+          "code": "DTW",
+          "city": "Detroit"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 19,
+      "fields": {
+          "code": "PHL",
+          "city": "Philadelphia"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 20,
+      "fields": {
+          "code": "SLC",
+          "city": "Salt Lake City"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 21,
+      "fields": {
+          "code": "DCA",
+          "city": "Washington, D.C."
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 22,
+      "fields": {
+          "code": "SAN",
+          "city": "San Diego"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 23,
+      "fields": {
+          "code": "AUS",
+          "city": "Austin"
+      }
+  },
+  {
+      "model": "rentajetapi.airport",
+      "pk": 24,
+      "fields": {
+          "code": "HNL",
+          "city": "Honolulu"
+      }
+  }
+]
