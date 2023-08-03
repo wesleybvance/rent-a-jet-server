@@ -6,4 +6,6 @@ from rentajetapi.models import Customer
 
 class CustomerView(ViewSet):
     def retrieve(self, request, pk):
-        """Handle GET requests for a single """
+        """Handle GET requests for a single customer"""
+        
+        customer
