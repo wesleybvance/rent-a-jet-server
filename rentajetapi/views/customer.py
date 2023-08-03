@@ -8,4 +8,4 @@ class CustomerView(ViewSet):
     def retrieve(self, request, pk):
         """Handle GET requests for a single customer"""
         
-        customer
+        customer = Customer.objects.get(pk=pk)
