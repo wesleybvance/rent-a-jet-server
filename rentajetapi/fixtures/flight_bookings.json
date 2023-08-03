@@ -1,6 +1,6 @@
 [
   {
-      "model": "rentajetapi.airport",
+      "model": "rentajetapi.flightbooking",
       "pk": 1,
       "fields": {
           "customer_id": 1,
@@ -10,7 +10,7 @@
       }
   },
   {
-      "model": "rentajetapi.airport",
+      "model": "rentajetapi.flightbooking",
       "pk": 2,
       "fields": {
         "customer_id": 1,
@@ -20,7 +20,7 @@
       }
   },
   {
-      "model": "rentajetapi.airport",
+      "model": "rentajetapi.flightbooking",
       "pk": 3,
       "fields": {
         "customer_id": 2,
@@ -30,7 +30,7 @@
       }
   },
   {
-      "model": "rentajetapi.airport",
+      "model": "rentajetapi.flightbooking",
       "pk": 4,
       "fields": {
         "customer_id": 2,
