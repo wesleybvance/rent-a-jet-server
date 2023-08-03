@@ -27,12 +27,12 @@
       "model": "rentajetapi.customer",
       "pk": 3,
       "fields": {
-        "first_name": "Mary",
+        "first_name": "Anchovy",
         "last_name": "Smith",
-        "email": "marysmith@gmail.com",
-        "phone_number": 5551234568,
-        "home_airport": 5,
-        "profile_image": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/35af6a41332353.57a1ce913e889.jpg"
+        "email": "anchovysmith@gmail.com",
+        "phone_number": 5551234579,
+        "home_airport": 1,
+        "profile_image": "https://static.wikia.nocookie.net/spongebob/images/d/d6/The_Chaperone_123.png/revision/latest?cb=20200112200230"
     }
   }
 ]
