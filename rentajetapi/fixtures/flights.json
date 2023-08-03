@@ -13,19 +13,21 @@
     "model": "rentajetapi.flight",
     "pk": 2,
     "fields": {
-      "name": "Nashville to Dallas-Fort Worth",
+      "name": "Nashville to New York",
       "departure_airport_id": 1,
       "destination_airport_id": 3,
-      "price": 0    }
+      "price": 0
+    }
   },
   {
     "model": "rentajetapi.flight",
     "pk": 3,
     "fields": {
-      "name": "Nashville to Denver",
+      "name": "Nashville to Los Angeles",
       "departure_airport_id": 1,
       "destination_airport_id": 4,
-      "price": 0    }
+      "price": 0
+    }
   },
   {
     "model": "rentajetapi.flight",
@@ -34,87 +36,167 @@
       "name": "Nashville to Chicago",
       "departure_airport_id": 1,
       "destination_airport_id": 5,
-      "price": 0    }
+      "price": 0
+    }
   },
   {
     "model": "rentajetapi.flight",
     "pk": 5,
     "fields": {
-      "name": "Nashville to Los Angeles",
-      "departure_airport_id": 1,
-      "destination_airport_id": 6,
-      "price": 0    }
+      "name": "Atlanta to Nashville",
+      "departure_airport_id": 2,
+      "destination_airport_id": 1,
+      "price": 0
+    }
   },
   {
     "model": "rentajetapi.flight",
     "pk": 6,
     "fields": {
-      "name": "Nashville to New York",
-      "departure_airport_id": 1,
-      "destination_airport_id": 7,
-      "price": 0    }
+      "name": "Atlanta to New York",
+      "departure_airport_id": 2,
+      "destination_airport_id": 3,
+      "price": 0
+    }
   },
   {
     "model": "rentajetapi.flight",
     "pk": 7,
     "fields": {
-      "name": "Nashville to Las Vegas",
-      "departure_airport_id": 1,
-      "destination_airport_id": 8,
-      "price": 0    }
+      "name": "Atlanta to Los Angeles",
+      "departure_airport_id": 2,
+      "destination_airport_id": 4,
+      "price": 0
+    }
   },
   {
     "model": "rentajetapi.flight",
     "pk": 8,
     "fields": {
-      "name": "Nashville to Orlando",
-      "departure_airport_id": 1,
-      "destination_airport_id": 9,
-      "price": 0    }
+      "name": "Atlanta to Chicago",
+      "departure_airport_id": 2,
+      "destination_airport_id": 5,
+      "price": 0
+    }
   },
   {
     "model": "rentajetapi.flight",
     "pk": 9,
     "fields": {
-      "name": "Nashville to Miami",
-      "departure_airport_id": 1,
-      "destination_airport_id": 10,
-      "price": 0    }
+      "name": "New York to Nashville",
+      "departure_airport_id": 3,
+      "destination_airport_id": 1,
+      "price": 0
+    }
   },
   {
     "model": "rentajetapi.flight",
     "pk": 10,
     "fields": {
-      "name": "",
-      "departure_airport_id": 1,
-      "destination_airport_id": 11,
-      "price": 0    }
+      "name": "New York to Atlanta",
+      "departure_airport_id": 3,
+      "destination_airport_id": 2,
+      "price": 0
+    }
   },
   {
     "model": "rentajetapi.flight",
     "pk": 11,
     "fields": {
-      "name": "",
-      "departure_airport_id": 1,
-      "destination_airport_id": 12,
-      "price": 0    }
+      "name": "New York to Los Angeles",
+      "departure_airport_id": 3,
+      "destination_airport_id": 4,
+      "price": 0
+    }
   },
   {
     "model": "rentajetapi.flight",
     "pk": 12,
     "fields": {
-      "name": "",
-      "departure_airport_id": 1,
-      "destination_airport_id": 13,
-      "price": 0    }
+      "name": "New York to Chicago",
+      "departure_airport_id": 3,
+      "destination_airport_id": 5,
+      "price": 0
+    }
   },
   {
     "model": "rentajetapi.flight",
     "pk": 13,
     "fields": {
-      "name": "",
-      "departure_airport_id": 1,
-      "destination_airport_id": 14,
-      "price": 0    }
+      "name": "Los Angeles to Nashville",
+      "departure_airport_id": 4,
+      "destination_airport_id": 1,
+      "price": 0
+    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 14,
+    "fields": {
+      "name": "Los Angeles to Atlanta",
+      "departure_airport_id": 4,
+      "destination_airport_id": 2,
+      "price": 0
+    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 15,
+    "fields": {
+      "name": "Los Angeles to New York",
+      "departure_airport_id": 4,
+      "destination_airport_id": 3,
+      "price": 0
+    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 16,
+    "fields": {
+      "name": "Los Angeles to Chicago",
+      "departure_airport_id": 4,
+      "destination_airport_id": 5,
+      "price": 0
+    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 17,
+    "fields": {
+      "name": "Chicago to Nashville",
+      "departure_airport_id": 5,
+      "destination_airport_id": 1,
+      "price": 0
+    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 18,
+    "fields": {
+      "name": "Chicago to Atlanta",
+      "departure_airport_id": 5,
+      "destination_airport_id": 2,
+      "price": 0
+    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 19,
+    "fields": {
+      "name": "Chicago to New York",
+      "departure_airport_id": 5,
+      "destination_airport_id": 3,
+      "price": 0
+    }
+  },
+  {
+    "model": "rentajetapi.flight",
+    "pk": 20,
+    "fields": {
+      "name": "Chicago to Los Angeles",
+      "departure_airport_id": 5,
+      "destination_airport_id": 4,
+      "price": 0
+    }
   }
 ]
