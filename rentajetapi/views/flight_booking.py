@@ -46,7 +46,6 @@ class FlightBookingView(ViewSet):
             customer_id=customer,
             date=request.data["date"],
             payment_method=request.data["paymentMethod"],
-            price=request.data["price"],
         )
         serializer = FlightBookingSerializer(flight_booking)
         return Response(serializer.data)
@@ -64,7 +63,6 @@ class FlightBookingView(ViewSet):
         flight_booking.category_id=flight
         flight_booking.date=request.data["date"]
         flight_booking.payment_method=request.data["paymentMethod"]
-        flight_booking.price=request.data["price"]
 
         flight_booking.save()
 
@@ -83,5 +81,5 @@ class FlightBookingView(ViewSet):
 class FlightBookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = FlightBooking
-        fields = ('id', 'customer_id', 'flight_id', 'date', 'payment_method', 'price')
+        fields = ('id', 'customer_id', 'flight_id', 'date', 'payment_method')
         depth = 2
