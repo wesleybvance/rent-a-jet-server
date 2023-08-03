@@ -8,3 +8,4 @@ class FlightBooking(models.Model):
     flight_id = models.ForeignKey(Flight, on_delete=models.CASCADE)
     date = models.DateField()
     payment_method = models.CharField(max_length=50)
+    price = models.IntegerField(default=0)
