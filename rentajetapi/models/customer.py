@@ -8,3 +8,4 @@ class Customer(models.Model):
     phone_number = models.IntegerField()
     profile_image = models.CharField(max_length=200)
     home_airport = models.ForeignKey(Airport, on_delete=models.CASCADE)
+    uid = models.CharField(max_length=200, default='')
