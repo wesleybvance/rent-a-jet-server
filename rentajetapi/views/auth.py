@@ -22,6 +22,9 @@ def check_user(request):
 
     # If authentication was successful, respond with their token
     if customer is not None:
+        
+        airport = AirportSerializer(Airport.objects.get(pk=customer.home_airport.id))
+        
         data = {
             'id': customer.id,
             'uid': customer.uid,
@@ -30,7 +33,7 @@ def check_user(request):
             'phone_number': customer.phone_number,
             'email': customer.email,
             'profile_image': customer.profile_image,
-            'home_airport': AirportSerializer(customer.home_airport),
+            'home_airport': airport.data,
         }
         return Response(data)
     else:
