@@ -4,6 +4,7 @@ from rentajetapi.models.customer import Customer
 from rentajetapi.models.airport import Airport
 from rest_framework import status
 from rentajetapi.views.customer import CustomerSerializer
+from rentajetapi.views.airport import AirportSerializer
 
 
 @api_view(['POST'])
@@ -29,7 +30,7 @@ def check_user(request):
             'phone_number': customer.phone_number,
             'email': customer.email,
             'profile_image': customer.profile_image,
-            'home_airport': customer.home_airport
+            'home_airport': AirportSerializer(customer.home_airport),
         }
         return Response(data)
     else:
