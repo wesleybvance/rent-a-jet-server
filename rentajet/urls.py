@@ -17,11 +17,13 @@ from django.contrib import admin
 from rentajetapi.views.auth import check_user, register_user
 from django.urls import path, include
 from rest_framework import routers
-from rentajetapi.views import CustomerView, AirportView
+from rentajetapi.views import CustomerView, AirportView, FlightView, FlightBookingView
 
 router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'customers', CustomerView, 'customer')
 router.register(r'airports', AirportView, 'airport')
+router.register(r'flights', FlightView, 'flight')
+router.register(r'flight_bookings', FlightBookingView, 'flight_booking')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
