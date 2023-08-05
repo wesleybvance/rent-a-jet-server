@@ -69,13 +69,13 @@ class FlightBookingView(ViewSet):
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
     def destroy(self, request, pk):
-        """Handles DELETE requests for a post
+        """Handles DELETE requests for a flight booking
 
         Returns:
             Response -- Empty body with 204 status code
         """
-        post = Post.objects.get(pk=pk)
-        post.delete()
+        flight_booking = FlightBooking.objects.get(pk=pk)
+        flight_booking.delete()
         return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 class FlightBookingSerializer(serializers.ModelSerializer):
