@@ -3,7 +3,7 @@ from rest_framework import serializers
 from rest_framework.response import Response
 from rest_framework.decorators import action
 from rest_framework import status
-from rentajetapi.models import Customer
+from rentajetapi.models import Customer, Airport
 
 class CustomerView(ViewSet):
     def retrieve(self, request, pk):
@@ -16,7 +16,19 @@ class CustomerView(ViewSet):
     def create(self, request):
         """POST request to create a customer"""
         uid = request.META["HTTP_AUTHORIZATION"]
-        serializer = CustomerSerializer(data=request.data)
+        airport = Airport.objects.get(pk=request.data["homeAirport"])
+        
+        customer = Customer(
+            uid = uid,
+            first_name = request.data['firstName'],
+            last_name = request.data['lastName'],
+            email = request.data['username'],
+            phone_number = request.data['phoneNumber'],
+            profile_image = request.data['profileImage'],
+            home_airport = airport,
+        )
+        
+        serializer = CustomerSerializer(customer)
         serializer.is_valid(raise_exception=True)
         serializer.save(uid=uid)
         return Response(serializer.data, status=status.HTTP_201_CREATED)
@@ -27,10 +39,11 @@ class CustomerView(ViewSet):
         uid = request.META["HTTP_AUTHORIZATION"]
         customer.first_name = request.data['firstName']
         customer.last_name = request.data['lastName']
-        customer.email = request.data['username']
-        customer.phone_number = request.data['imageUrl']
-        customer.profile_image = request.data['address']
-        customer.home_airport = uid
+        customer.email = request.data['email']
+        customer.phone_number = request.data['phoneNumber']
+        customer.profile_image = request.data['profileImage']
+        customer.home_airport = request.data['homeAirport']
+        customer.uid = uid
         customer.save()
         return Response({'message': 'Customer Updated'}, status=status.HTTP_204_NO_CONTENT)
 
