@@ -74,6 +74,7 @@ def register_user(request):
     # }
     # uid = request.META["HTTP_AUTHORIZATION"]
     airport = Airport.objects.get(pk=request.data["homeAirport"])
+    airport_serializer = AirportSerializer(airport)
         
     customer = Customer.objects.create(
         uid = request.data['uid'],
@@ -93,7 +94,7 @@ def register_user(request):
         'email': customer.email,
         'phone_number': customer.phone_number,
         'profile_image': customer.profile_image,
-        'home_airport': customer.home_airport
+        'home_airport': airport_serializer.data
     }
     
     return Response(data)

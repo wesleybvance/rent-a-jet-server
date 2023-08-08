@@ -46,6 +46,16 @@ class CustomerView(ViewSet):
         customer.uid = uid
         customer.save()
         return Response({'message': 'Customer Updated'}, status=status.HTTP_204_NO_CONTENT)
+    
+    def destroy(self, request, pk):
+        """Handles DELETE requests for a customer
+
+        Returns:
+            Response -- Empty body with 204 status code
+        """
+        customer = Customer.objects.get(pk=pk)
+        customer.delete()
+        return Response(None, status=status.HTTP_204_NO_CONTENT)
 
 class CustomerSerializer(serializers.ModelSerializer):
     """JSON serializer for customer
