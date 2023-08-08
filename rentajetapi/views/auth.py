@@ -72,20 +72,34 @@ def register_user(request):
     #         'phone_number': customer.phone_number,
     #         'home_airport': customer.home_airport
     # }
-    uid = request.META["HTTP_AUTHORIZATION"]
+    # uid = request.META["HTTP_AUTHORIZATION"]
     airport = Airport.objects.get(pk=request.data["homeAirport"])
+    airport_serializer = AirportSerializer(airport)
         
-    customer = Customer(
-        uid = uid,
+    customer = Customer.objects.create(
+        uid = request.data['uid'],
         first_name = request.data['firstName'],
         last_name = request.data['lastName'],
-        email = request.data['username'],
+        email = request.data['email'],
         phone_number = request.data['phoneNumber'],
         profile_image = request.data['profileImage'],
         home_airport = airport,
         )
+    
+    data = {
+        'id': customer.id,
+        'uid': customer.uid,
+        'first_name': customer.first_name,
+        'last_name': customer.last_name,
+        'email': customer.email,
+        'phone_number': customer.phone_number,
+        'profile_image': customer.profile_image,
+        'home_airport': airport_serializer.data
+    }
+    
+    return Response(data)
         
-    serializer = CustomerSerializer(customer)
-    serializer.is_valid(raise_exception=True)
-    serializer.save(uid=uid)
-    return Response(serializer.data, status=status.HTTP_201_CREATED)
+    # serializer = CustomerSerializer(customer)
+    # serializer.is_valid(raise_exception=True)
+    # serializer.save(uid=uid)
+    # return Response(serializer.data, status=status.HTTP_201_CREATED)
