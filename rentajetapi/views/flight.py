@@ -40,5 +40,5 @@ class FlightView(ViewSet):
 class FlightSerializer(serializers.ModelSerializer):
     class Meta:
         model = Flight
-        fields = ('id', 'departure_airport_id', 'destination_airport_id', 'price')
+        fields = ('id', 'departure_airport_id', 'destination_airport_id', 'price', 'name')
         depth = 1
