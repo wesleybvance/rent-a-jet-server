@@ -60,7 +60,7 @@ class FlightBookingView(ViewSet):
         customer = Customer.objects.get(pk=request.data["customerId"])
         flight_booking.customer_id=customer
         flight = Flight.objects.get(pk=request.data["flightId"])
-        flight_booking.category_id=flight
+        flight_booking.flight_id=flight
         flight_booking.date=request.data["date"]
         flight_booking.payment_method=request.data["paymentMethod"]
 
